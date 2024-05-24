@@ -3,6 +3,10 @@
 export PATH=$PATH:$FYPM_DIR/scripts
 export PATH=$PATH:$FYSM_DIR/scripts
 
+# Tmp export 
+export MYBIN=$FYSM_DIR/scripts
+export TWBIN=$FYPM_DIR/scripts
+
 source $FYW_DIR/config/vars
 
 source $FYW_DIR/config/aliases
