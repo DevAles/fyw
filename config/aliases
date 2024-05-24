@@ -28,3 +28,6 @@ alias taschlss="_tadatels scheduled all"
 # TimeWarrior
 alias tiils='timew summary :ids'
 
+# Hotfix alias
+alias sft_rst_poly='polybar-msg cmd restart'
+alias frc_rst_poly='killall -s KILL polybar && bspbar & disown'
