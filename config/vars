@@ -14,8 +14,8 @@ export INIT_LOGS="$PERMLOGSDIR"/init_scripts
 # -------------------------------------------------- #
 #                       FYPM
 
-export TW_DB=<path_to_taskwarrior>
-export TIMEWARRIORDB=<path_to_timewarrior>
+export TW_DB=/home/devales/.tasks/db
+export TIMEWARRIORDB=/home/devales/.timewarrior/db
 
 export WORKTIME=$(cat /var/tmp/current_work_time | sed 's/\s[->].*//g')
 

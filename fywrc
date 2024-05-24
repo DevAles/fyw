@@ -1,11 +1,4 @@
 #!/bin/zsh
-# ---------------------------------- #
-# Set this in your .zshrc file
-export FYW_DIR=<path_to_fyw_dir> # a good example: ~/.config/fyw
-export FYPM_DIR=<path_to_fypm_repo>
-export FYSM_DIR=<path_to_fysm_repo>
-# ---------------------------------- #
-
 
 # Add fypm and fysm to PATH
 export PATH=$PATH:$FYPM_DIR/scripts
