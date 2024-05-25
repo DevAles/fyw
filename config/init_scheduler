@@ -38,7 +38,7 @@ else
 fi
 
 # -- Saturday --
-if [[$(date +%u) -lt 6]]; then
+if [[ $(date +%u) -eq 6 ]]; then
     if [[ $(date +%H%M) -lt 1100 ]]; then
         echo "export DISPLAY=$DISPLAY && $TWBIN/worktime Essential" | at 11:00
     else
@@ -47,7 +47,7 @@ if [[$(date +%u) -lt 6]]; then
     RELAX_HOUR=18:00
 
 # -- Sunday --
-elif [[$(date +%u) -eq 7]]; then
+elif [[ $(date +%u) -eq 7 ]]; then
     RELAX_HOUR=17:00 # Overview
 
 # -- Weekdays --
