@@ -67,7 +67,8 @@ else
     CURRENT_WT=Relax
 fi
 
-$TWBIN/worktime $CURRENT_WT
+sudo -v
+worktime $CURRENT_WT
 
 # --------------- Lighting --------------- #
 if [[ $(date +%H%M) -lt 1700 ]]; then
@@ -83,9 +84,8 @@ fi
 
 $MYBIN/lighting $CURRENT_LGT
 
-
 # ---------------- Others ---------------- #
 #echo "/bin/killall DiscordPTB" | at 18:00
-echo "pkill -SIGTERM X" | at 18:00
+echo "pkill -SIGTERM X" | at 18:30
 
 #yes | andrun -2 "echo 'wol $HOSTMAC' | at 06:00"

@@ -1,17 +1,20 @@
 #!/bin/zsh
 # Add fypm and fysm to PATH
-export PATH=$PATH:$FYPM_DIR/scripts
+export PATH=$PATH:$FYPM_DIR/scripts/pending
 export PATH=$PATH:$FYSM_DIR/scripts
 
 # Tmp export 
+export TWBIN=$FYPM_DIR/scripts/pending
 export MYBIN=$FYSM_DIR/scripts
-export TWBIN=$FYPM_DIR/scripts
 
 source $FYW_DIR/config/vars
 source $FYW_DIR/config/aliases
 
 # Init some fysm scripts if it is the initialization of the system
 if test ! -e "$INIT_LOCK"; then
+    # Set keyboard layout
+    setxkbmap -layout us -variant altgr-intl &
+
     mkdir "$FYSM_TEMP"
 
     source "$FYW_DIR"/config/init_scheduler
